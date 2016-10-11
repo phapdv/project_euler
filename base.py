@@ -42,5 +42,12 @@ class Problem(object):
                 return 0
             return 1
 
+    def digits_sum(self, n):
+        s = 0
+        while n > 0:
+            s = s + (n % 10)
+            n = n // 10
+        return s
+
     def solve(self):
         return 'No sulution given yet!'

@@ -49,5 +49,11 @@ class Problem(object):
             n = n // 10
         return s
 
+    def factorial(self, n):
+        if n == 1:
+            return 1
+        else:
+            return n * self.factorial(n - 1)
+
     def solve(self):
         return 'No sulution given yet!'
